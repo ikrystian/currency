@@ -1,5 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.currency-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+input, select {
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer
+}
+
+input[readonly] {
+  border: 0;
 }

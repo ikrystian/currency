@@ -1,0 +1,12 @@
+<div class="currency-container">
+<div>
+  <input id="convert" [(ngModel)]="amount" (input)="convert()" type="number" step="0.01" min="0">
+</div>
+<div>
+  <select [(ngModel)]="toCurrency" (change)="convert()">
+    <option *ngFor="let currency of rates | keyvalue" [value]="currency.key">USD / {{ currency.key }}</option>
+  </select>
+</div>
+  <input [value]="convertedAmount | number:'1.2-2'" readonly>
+
+</div>
